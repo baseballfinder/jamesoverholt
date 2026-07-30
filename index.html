@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>James Overholt — Data, Software &amp; Growth Consultant</title>
+<meta name="description" content="James Overholt is a data analyst, software developer and growth operator with nearly two decades in IT. He helps businesses turn data into decisions, ship software, and scale profitable paid-traffic funnels." />
+<meta name="author" content="James Overholt" />
+<link rel="canonical" href="https://jamesoverholt.com/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="James Overholt — Data, Software &amp; Growth Consultant" />
+<meta property="og:description" content="Data analyst, software developer and growth operator. Nearly two decades turning data into decisions and traffic into revenue." />
+<meta property="og:url" content="https://jamesoverholt.com/" />
+<meta property="og:image" content="https://jamesoverholt.com/james-headshot.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="James Overholt — Data, Software &amp; Growth Consultant" />
+<meta name="twitter:description" content="Data analyst, software developer and growth operator. Nearly two decades turning data into decisions and traffic into revenue." />
+<meta name="twitter:image" content="https://jamesoverholt.com/james-headshot.jpg" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230a0e17'/%3E%3Ctext x='50' y='68' font-size='58' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2364f0c8'%3EJ%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+<!-- EEAT: structured data connecting James's verified profiles -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "James Overholt",
+  "url": "https://jamesoverholt.com/",
+  "image": "https://jamesoverholt.com/james-headshot.jpg",
+  "jobTitle": "Data & Software Consultant, Co-Founder",
+  "description": "Data analyst, software developer and growth operator with nearly two decades in information technology.",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "East Tennessee State University"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "TheSmokies.com LLC"
+  },
+  "knowsAbout": [
+    "Data Analytics",
+    "Software Development",
+    "Paid Traffic Arbitrage",
+    "SEO",
+    "Marketing Automation",
+    "Digital Publishing"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/james-overholt-20283518/",
+    "https://www.facebook.com/james.overholt",
+    "https://www.thesmokies.com/james-overholt/",
+    "https://miamitake.com/"
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --bg:#080b12;
+    --bg-2:#0d1220;
+    --panel:#111827;
+    --panel-2:#0f1626;
+    --line:#1e2a3d;
+    --line-2:#2a3a52;
+    --txt:#e8eef7;
+    --txt-dim:#93a3ba;
+    --txt-faint:#5f7089;
+    --accent:#5ff0c4;
+    --accent-2:#3aa8ff;
+    --accent-glow:rgba(95,240,196,.14);
+    --danger:#ff6b6b;
+    --radius:14px;
+    --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+    --sans:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--sans);
+    background:var(--bg);
+    color:var(--txt);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;z-index:-2;
+    background:
+      radial-gradient(900px 500px at 80% -10%, rgba(58,168,255,.10), transparent 60%),
+      radial-gradient(800px 500px at 0% 10%, rgba(95,240,196,.08), transparent 55%),
+      var(--bg);
+  }
+  body::after{
+    content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+    background-size:64px 64px;
+    opacity:.15;
+    mask-image:radial-gradient(circle at 50% 30%, #000 0%, transparent 75%);
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  .mono{font-family:var(--mono)}
+  .accent{color:var(--accent)}
+
+  /* NAV */
+  header.nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);
+    background:rgba(8,11,18,.72);border-bottom:1px solid var(--line)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{font-family:var(--mono);font-weight:700;font-size:16px;letter-spacing:.5px;display:flex;align-items:center;gap:10px}
+  .brand .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent)}
+  .nav-links{display:flex;gap:28px;align-items:center}
+  .nav-links a{font-size:14px;color:var(--txt-dim);font-weight:500;transition:color .2s}
+  .nav-links a:hover{color:var(--txt)}
+  .nav-cta{border:1px solid var(--line-2);padding:8px 16px;border-radius:8px;color:var(--txt)!important;font-family:var(--mono);font-size:13px;transition:all .2s}
+  .nav-cta:hover{border-color:var(--accent);color:var(--accent)!important;box-shadow:0 0 20px var(--accent-glow)}
+  .nav-toggle{display:none;background:none;border:1px solid var(--line-2);color:var(--txt);border-radius:8px;padding:6px 10px;cursor:pointer;font-size:18px}
+
+  /* HERO */
+  .hero{padding:88px 0 72px;position:relative}
+  .kicker{font-family:var(--mono);font-size:13px;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:22px;display:flex;align-items:center;gap:10px}
+  .kicker::before{content:"";width:28px;height:1px;background:var(--accent)}
+  .hero h1{font-size:clamp(38px,6vw,68px);line-height:1.04;font-weight:800;letter-spacing:-1.5px;margin-bottom:22px}
+  .hero h1 .grad{background:linear-gradient(120deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p.lead{font-size:clamp(17px,2.2vw,21px);color:var(--txt-dim);max-width:640px;margin-bottom:34px}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .btn{display:inline-flex;align-items:center;gap:9px;padding:13px 24px;border-radius:10px;font-weight:600;font-size:15px;cursor:pointer;transition:all .2s;border:1px solid transparent;font-family:var(--sans)}
+  .btn-primary{background:linear-gradient(120deg,var(--accent),#48d6ab);color:#04120d;box-shadow:0 8px 30px var(--accent-glow)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(95,240,196,.28)}
+  .btn-ghost{border-color:var(--line-2);color:var(--txt)}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+
+  .hero-grid{display:grid;grid-template-columns:1.35fr .9fr;gap:52px;align-items:center}
+  .portrait{position:relative}
+  .portrait img{width:100%;border-radius:var(--radius);border:1px solid var(--line-2);display:block;filter:grayscale(.15) contrast(1.03)}
+  .portrait .frame{position:absolute;inset:-1px;border-radius:var(--radius);pointer-events:none;
+    background:linear-gradient(180deg,transparent 55%,rgba(8,11,18,.85));}
+  .portrait .tag{position:absolute;bottom:16px;left:16px;font-family:var(--mono);font-size:12px;color:var(--txt);
+    background:rgba(8,11,18,.7);border:1px solid var(--line-2);padding:6px 12px;border-radius:8px;backdrop-filter:blur(6px)}
+  .portrait .tag b{color:var(--accent)}
+
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:56px}
+  .stat{background:var(--bg-2);padding:22px 20px}
+  .stat .n{font-family:var(--mono);font-size:30px;font-weight:700;color:var(--txt);letter-spacing:-1px}
+  .stat .n span{color:var(--accent)}
+  .stat .l{font-size:13px;color:var(--txt-faint);margin-top:4px}
+
+  /* SECTION */
+  section{padding:76px 0;border-top:1px solid var(--line)}
+  .sec-head{margin-bottom:44px}
+  .sec-tag{font-family:var(--mono);font-size:13px;color:var(--accent-2);letter-spacing:1px}
+  .sec-head h2{font-size:clamp(28px,4vw,42px);font-weight:800;letter-spacing:-1px;margin-top:12px;line-height:1.1}
+  .sec-head p{color:var(--txt-dim);max-width:620px;margin-top:14px;font-size:17px}
+
+  /* ABOUT */
+  .about-grid{display:grid;grid-template-columns:1.3fr .8fr;gap:48px}
+  .about-body p{color:var(--txt-dim);margin-bottom:18px;font-size:16.5px}
+  .about-body strong{color:var(--txt)}
+  .cred{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel-2);padding:26px}
+  .cred h3{font-family:var(--mono);font-size:13px;color:var(--txt-faint);text-transform:uppercase;letter-spacing:1px;margin-bottom:18px}
+  .cred ul{list-style:none;display:flex;flex-direction:column;gap:14px}
+  .cred li{display:flex;gap:12px;font-size:14.5px;color:var(--txt-dim)}
+  .cred li b{color:var(--txt);font-weight:600}
+  .cred li .mk{color:var(--accent);font-family:var(--mono)}
+
+  /* SERVICES */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .card{border:1px solid var(--line);background:linear-gradient(180deg,var(--panel),var(--panel-2));border-radius:var(--radius);padding:30px 26px;position:relative;overflow:hidden;transition:all .25s}
+  .card:hover{border-color:var(--line-2);transform:translateY(-4px)}
+  .card::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent-2));opacity:0;transition:opacity .25s}
+  .card:hover::before{opacity:1}
+  .card .ic{width:44px;height:44px;border-radius:10px;border:1px solid var(--line-2);display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-size:20px;background:var(--bg-2)}
+  .card h3{font-size:19px;font-weight:700;margin-bottom:10px}
+  .card .idx{position:absolute;top:24px;right:24px;font-family:var(--mono);font-size:13px;color:var(--txt-faint)}
+  .card p{color:var(--txt-dim);font-size:15px;margin-bottom:18px}
+  .card ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+  .card ul li{font-size:14px;color:var(--txt-dim);display:flex;gap:9px;align-items:flex-start}
+  .card ul li::before{content:"▹";color:var(--accent);font-size:13px;margin-top:1px}
+
+  /* WORK */
+  .work-list{display:flex;flex-direction:column;gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+  .work-row{display:grid;grid-template-columns:1fr auto;gap:20px;padding:24px 28px;background:var(--panel-2);border-bottom:1px solid var(--line);transition:background .2s}
+  .work-row:last-child{border-bottom:none}
+  .work-row:hover{background:var(--panel)}
+  .work-row .meta{display:flex;flex-direction:column;gap:6px}
+  .work-row .r-title{font-size:18px;font-weight:700;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .work-row .r-title .role{font-family:var(--mono);font-size:12px;color:var(--accent);border:1px solid var(--line-2);padding:2px 8px;border-radius:6px;font-weight:500}
+  .work-row .r-desc{color:var(--txt-dim);font-size:15px;max-width:640px}
+  .work-row .r-link{align-self:center;font-family:var(--mono);font-size:13px;color:var(--txt-faint);white-space:nowrap;transition:color .2s}
+  .work-row a.r-link:hover{color:var(--accent)}
+
+  /* CONTACT */
+  .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
+  .contact-copy h2{font-size:clamp(28px,4vw,40px);font-weight:800;letter-spacing:-1px;line-height:1.1;margin-bottom:16px}
+  .contact-copy p{color:var(--txt-dim);font-size:16.5px;margin-bottom:26px}
+  .contact-meta{display:flex;flex-direction:column;gap:14px}
+  .contact-meta a,.contact-meta span{display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:14px;color:var(--txt-dim);transition:color .2s}
+  .contact-meta a:hover{color:var(--accent)}
+  .contact-meta .mk{color:var(--accent)}
+  form{border:1px solid var(--line);background:var(--panel-2);border-radius:var(--radius);padding:30px}
+  .field{margin-bottom:18px}
+  .field label{display:block;font-family:var(--mono);font-size:12px;color:var(--txt-faint);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+  .field input,.field select,.field textarea{width:100%;background:var(--bg);border:1px solid var(--line-2);border-radius:9px;padding:12px 14px;color:var(--txt);font-family:var(--sans);font-size:15px;transition:border-color .2s,box-shadow .2s}
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-glow)}
+  .field textarea{resize:vertical;min-height:120px}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  form .btn-primary{width:100%;justify-content:center;margin-top:6px}
+  .form-note{font-size:13px;color:var(--txt-faint);margin-top:14px;text-align:center;font-family:var(--mono)}
+  .form-msg{margin-top:16px;padding:12px 16px;border-radius:9px;font-size:14px;display:none}
+  .form-msg.ok{display:block;background:rgba(95,240,196,.08);border:1px solid rgba(95,240,196,.3);color:var(--accent)}
+  .form-msg.err{display:block;background:rgba(255,107,107,.08);border:1px solid rgba(255,107,107,.3);color:var(--danger)}
+
+  /* FOOTER */
+  footer{border-top:1px solid var(--line);padding:44px 0 56px;margin-top:20px}
+  .foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+  .foot .l{font-family:var(--mono);font-size:13px;color:var(--txt-faint)}
+  .foot .links{display:flex;gap:22px}
+  .foot .links a{font-size:14px;color:var(--txt-dim);transition:color .2s}
+  .foot .links a:hover{color:var(--accent)}
+
+  @media(max-width:900px){
+    .hero-grid{grid-template-columns:1fr;gap:36px}
+    .portrait{max-width:340px}
+    .about-grid,.contact-grid{grid-template-columns:1fr;gap:32px}
+    .cards{grid-template-columns:1fr}
+    .stats{grid-template-columns:1fr}
+    .nav-links{display:none}
+    .nav-links.open{display:flex;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:var(--bg-2);border-bottom:1px solid var(--line);padding:18px 24px;gap:18px}
+    .nav-toggle{display:block}
+    .work-row{grid-template-columns:1fr}
+    .row2{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <div class="brand"><span class="dot"></span>james<span style="color:var(--accent)">.</span>overholt</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#beyond">Beyond</a>
+      <a href="#contact" class="nav-cta">Start a project →</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">≡</button>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" style="border-top:none">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="kicker">Data · Software · Growth</div>
+        <h1>I turn <span class="grad">data into decisions</span> and traffic into revenue.</h1>
+        <p class="lead">I'm James Overholt — a data analyst, software developer and growth operator with nearly two decades in IT. I build the systems, ship the code, and run the paid funnels that make businesses measurably better.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Work with me →</a>
+          <a href="#work" class="btn btn-ghost">See the work</a>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="james-headshot.jpg" alt="James Overholt" />
+        <div class="frame"></div>
+        <div class="tag mono">📍 East Tennessee · <b>remote-first</b></div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="n">~<span>20</span>yrs</div><div class="l">In information technology &amp; data</div></div>
+      <div class="stat"><div class="n"><span>3</span>+</div><div class="l">Digital properties built &amp; operated</div></div>
+      <div class="stat"><div class="n">$<span>M</span>s</div><div class="l">In paid traffic managed &amp; optimized</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / EEAT -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-tag mono">// about</div>
+      <h2>Two decades of shipping systems that move numbers.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-body">
+        <p><strong>I've spent my career at the intersection of data, software and revenue.</strong> Today I'm the co-founder of TheSmokies.com LLC, a media company that builds and operates data-driven regional travel publications including TheSmokies.com and MiamiTake.com — where I own the technical and analytics side of the business end to end. I was also a co-founder of HeyOrlando.com, which I no longer operate.</p>
+        <p>Earlier in my career I served as a <strong>lead software developer at Oak Ridge Associated Universities (ORAU)</strong>, where I revamped internal emergency-deployment systems and processes — work carried out alongside the Veterans Administration's Emergency Management Team to deliver aid to veterans and their communities. I've also run operations for a Tennessee-based home shopping network as Operations Manager.</p>
+        <p>Across all of it, the throughline is the same: <strong>find the signal in the data, build the tool or funnel that acts on it, and hold it accountable to a number.</strong> I care about margin, measurement, and systems that keep working after I step away.</p>
+        <p>I'm a Cocke County, Tennessee native and a graduate of <strong>East Tennessee State University</strong>.</p>
+      </div>
+      <div class="cred">
+        <h3>Credentials &amp; footprint</h3>
+        <ul>
+          <li><span class="mk">▸</span><span><b>Co-Founder</b> — TheSmokies.com LLC (media &amp; digital publishing)</span></li>
+          <li><span class="mk">▸</span><span><b>Former Lead Software Developer</b> — Oak Ridge Associated Universities (ORAU)</span></li>
+          <li><span class="mk">▸</span><span><b>Operations Manager</b> — Shopping Services LLC</span></li>
+          <li><span class="mk">▸</span><span><b>B.S.</b> — East Tennessee State University</span></li>
+          <li><span class="mk">▸</span><span>Verified: <a href="https://www.linkedin.com/in/james-overholt-20283518/" target="_blank" rel="noopener" style="color:var(--accent-2)">LinkedIn</a> · <a href="https://www.thesmokies.com/james-overholt/" target="_blank" rel="noopener" style="color:var(--accent-2)">Author profile</a></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-tag mono">// services</div>
+      <h2>What I do for clients.</h2>
+      <p>Three practices, one operating principle: everything ties back to a measurable outcome. Engage them individually or as a stack.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <span class="idx mono">01</span>
+        <div class="ic">📊</div>
+        <h3>Data Analytics &amp; Consulting</h3>
+        <p>Turn scattered data into decisions leadership can act on. I build the reporting, find the levers, and translate numbers into a plan.</p>
+        <ul>
+          <li>KPI &amp; dashboard design (GA4, Clarity, custom)</li>
+          <li>Attribution, cohort &amp; margin analysis</li>
+          <li>Data pipelines &amp; reporting automation</li>
+          <li>Fractional analyst / advisory engagements</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="idx mono">02</span>
+        <div class="ic">⚙️</div>
+        <h3>Software Development &amp; Automation</h3>
+        <p>Nearly 20 years shipping production software. I build the tool, integration or automation that removes the bottleneck.</p>
+        <ul>
+          <li>Web apps &amp; internal tools</li>
+          <li>API integrations &amp; data workflows</li>
+          <li>Automation (Make, Airtable, serverless)</li>
+          <li>Systems modernization &amp; process design</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="idx mono">03</span>
+        <div class="ic">🚀</div>
+        <h3>Paid-Traffic Arbitrage &amp; Growth</h3>
+        <p>I run profitable paid funnels for a living. Meta ad buying, funnel economics, and monetization tuned to protect margin at scale.</p>
+        <ul>
+          <li>Meta / paid-social campaign strategy</li>
+          <li>Funnel &amp; landing-page economics (CPLPV / RPM)</li>
+          <li>Content monetization &amp; audience building</li>
+          <li>Growth systems that scale without starving margin</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-tag mono">// selected work</div>
+      <h2>Where the work lives.</h2>
+      <p>A sample of the properties and systems I've built or operated. Real sites, real traffic, real revenue.</p>
+    </div>
+    <div class="work-list">
+      <div class="work-row">
+        <div class="meta">
+          <div class="r-title">MiamiTake.com <span class="role">Founder · Tech &amp; Growth</span></div>
+          <div class="r-desc">A South Florida travel publication built on data-driven content and profitable paid-traffic funnels. I own the stack: WordPress + Cloudflare, analytics, Meta ad arbitrage, email, and automation.</div>
+        </div>
+        <a class="r-link" href="https://miamitake.com/" target="_blank" rel="noopener">miamitake.com ↗</a>
+      </div>
+      <div class="work-row">
+        <div class="meta">
+          <div class="r-title">TheSmokies.com <span class="role">Co-Founder</span></div>
+          <div class="r-desc">Flagship regional travel media brand. I lead the technical and data side of the business — infrastructure, analytics, monetization and the YouTube channel.</div>
+        </div>
+        <a class="r-link" href="https://www.thesmokies.com/james-overholt/" target="_blank" rel="noopener">profile ↗</a>
+      </div>
+      <div class="work-row">
+        <div class="meta">
+          <div class="r-title">HeyOrlando.com <span class="role">Co-Founder · former</span></div>
+          <div class="r-desc">A regional travel publication I co-founded, applying the same content, SEO and paid-traffic playbook. I no longer operate the brand.</div>
+        </div>
+        <span class="r-link">former co-founder</span>
+      </div>
+      <div class="work-row">
+        <div class="meta">
+          <div class="r-title">ORAU — Emergency Deployment Systems <span class="role">Lead Developer</span></div>
+          <div class="r-desc">Revamped internal emergency-deployment systems and processes at Oak Ridge Associated Universities, working alongside the VA's Emergency Management Team to deliver aid to veterans and their communities.</div>
+        </div>
+        <span class="r-link">enterprise</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEYOND / HOBBIES -->
+<section id="beyond">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-tag mono">// beyond the work</div>
+      <h2>What I'm into when I'm off the clock.</h2>
+      <p>The same curiosity that drives the work shows up in how I spend my time — underwater, over the board, and on the trail.</p>
+    </div>
+
+    <!-- Featured: shipwreck project -->
+    <div class="cred" style="margin-bottom:20px;display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:center">
+      <div style="font-size:40px;line-height:1">🤿</div>
+      <div>
+        <h3 style="margin-bottom:8px">Scuba diving &amp; maritime archaeology</h3>
+        <p style="color:var(--txt-dim);font-size:15.5px;margin-bottom:14px">
+          I dive — and I'm fascinated by what's down there. I follow and support the
+          <strong style="color:var(--txt)">Menorca Shipwreck Project</strong>, the team documenting three
+          newly discovered medieval shipwrecks in Menorca's "Cove of Mysteries" — the very cove
+          behind me in the photo up top.
+        </p>
+        <div style="display:flex;gap:20px;flex-wrap:wrap">
+          <a href="https://www.menorcashipwreckproject.com/" target="_blank" rel="noopener" class="mono" style="font-size:13px;color:var(--accent-2)">menorcashipwreckproject.com ↗</a>
+          <a href="https://www.smithsonianmag.com/history/take-an-exclusive-look-at-three-newly-discovered-medieval-shipwrecks-in-menorcas-cove-of-mysteries-180989092/" target="_blank" rel="noopener" class="mono" style="font-size:13px;color:var(--accent-2)">Featured in Smithsonian Magazine ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards" style="grid-template-columns:repeat(2,1fr)">
+      <div class="card">
+        <div class="ic">🎲</div>
+        <h3>Board games</h3>
+        <p style="margin-bottom:0">A standing appreciation for a well-designed game — strategy, engine-building, and the kind of tabletop night that runs long. Systems thinking, but for fun.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🎒</div>
+        <h3>Rucking</h3>
+        <p style="margin-bottom:0">Weight on the back, miles under the feet. It's how I clear my head, stay in shape, and get some of my best thinking done away from a screen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-copy">
+        <div class="sec-tag mono">// contact</div>
+        <h2>Let's build something that moves the number.</h2>
+        <p>Tell me what you're working on. Whether it's a data problem, a piece of software, or a growth channel that needs to become profitable — I'll tell you honestly whether and how I can help.</p>
+        <div class="contact-meta">
+          <a href="mailto:james@jamesoverholt.com"><span class="mk">✉</span> james@jamesoverholt.com</a>
+          <a href="https://www.linkedin.com/in/james-overholt-20283518/" target="_blank" rel="noopener"><span class="mk">in</span> linkedin.com/in/james-overholt</a>
+          <span><span class="mk">◷</span> Typically replies within 1–2 business days</span>
+        </div>
+      </div>
+      <form id="contactForm" novalidate>
+        <div class="row2">
+          <div class="field">
+            <label for="name">Name *</label>
+            <input id="name" name="name" type="text" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" required autocomplete="email" />
+          </div>
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" autocomplete="organization" />
+          </div>
+          <div class="field">
+            <label for="service">What do you need?</label>
+            <select id="service" name="service">
+              <option value="">Select…</option>
+              <option>Data Analytics &amp; Consulting</option>
+              <option>Software Development &amp; Automation</option>
+              <option>Paid-Traffic Arbitrage &amp; Growth</option>
+              <option>Not sure yet / other</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="message">Project details *</label>
+          <textarea id="message" name="message" required placeholder="What are you trying to accomplish, and by when?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submitBtn">Send message →</button>
+        <div class="form-msg" id="formMsg"></div>
+        <div class="form-note">No spam, ever. Your details go straight to James.</div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div class="l">© <span id="yr"></span> James Overholt · Built &amp; operated in East Tennessee</div>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/james-overholt-20283518/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.facebook.com/james.overholt" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.thesmokies.com/james-overholt/" target="_blank" rel="noopener">TheSmokies</a>
+      <a href="mailto:james@jamesoverholt.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* ---- Config: Supabase (publishable key is safe to expose client-side) ---- */
+  const SUPABASE_URL = "https://xeybjpnkepmaobhawngo.supabase.co";
+  const SUPABASE_KEY = "sb_publishable_nCnSX0ZJY7ics63iQg901Q_N4nX7Nt1";
+
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Mobile nav
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.addEventListener('click', e => { if(e.target.tagName === 'A') links.classList.remove('open'); });
+
+  // Contact form -> Supabase REST insert
+  const form = document.getElementById('contactForm');
+  const msg = document.getElementById('formMsg');
+  const btn = document.getElementById('submitBtn');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    msg.className = 'form-msg';
+    const payload = {
+      p_name: form.name.value.trim(),
+      p_email: form.email.value.trim(),
+      p_message: form.message.value.trim(),
+      p_company: form.company.value.trim() || null,
+      p_service: form.service.value || null,
+      p_user_agent: navigator.userAgent
+    };
+    if(!payload.p_name || !payload.p_email || !payload.p_message){
+      msg.className = 'form-msg err';
+      msg.textContent = 'Please fill in your name, email and a message.';
+      return;
+    }
+    btn.disabled = true; btn.textContent = 'Sending…';
+    try{
+      // Calls the SECURITY DEFINER RPC (rpc/submit_contact) — anon can write, never read.
+      const res = await fetch(`${SUPABASE_URL}/rest/v1/rpc/submit_contact`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'apikey': SUPABASE_KEY,
+          'Authorization': `Bearer ${SUPABASE_KEY}`
+        },
+        body: JSON.stringify(payload)
+      });
+      if(!res.ok){ throw new Error('HTTP ' + res.status); }
+      form.reset();
+      msg.className = 'form-msg ok';
+      msg.textContent = '✓ Thanks — your message is in. I\'ll be in touch within 1–2 business days.';
+    }catch(err){
+      msg.className = 'form-msg err';
+      msg.innerHTML = 'Something went wrong. Please email me directly at <a href="mailto:james@jamesoverholt.com" style="color:inherit;text-decoration:underline">james@jamesoverholt.com</a>.';
+    }finally{
+      btn.disabled = false; btn.textContent = 'Send message →';
+    }
+  });
+</script>
+</body>
+</html>
